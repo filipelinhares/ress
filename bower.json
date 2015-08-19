@@ -1,0 +1,24 @@
+{
+  "name": "sanilize-css",
+  "version": "0.1.0",
+  "description": "Render elements consistently. Style with best practices.",
+  "license": "CC0",
+  "main": "dist/sanitize.css",
+  "homepage": "https://github.com/filipelinhares/sanilize.css",
+  "authors": [
+    "Jonathan Neal",
+    "Nicolas Gallagher"
+  ],
+  "keywords": [
+    "base",
+    "border-box",
+    "css",
+    "inherit",
+    "normalize",
+    "reset"
+  ],
+  "ignore": [
+    "gulpfile.js",
+    "package.json"
+  ]
+}
