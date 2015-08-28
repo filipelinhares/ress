@@ -1,0 +1,221 @@
+/*
+ * 1: Prevent IOS and IE text size adjust after device orientation change,
+ * without disabling user zoom.
+ * 2: IE11
+ * 3: All browsers without overlaying scrollbars
+ */
+
+:root {
+  -webkit-text-size-adjust: 100%;/* 1 */
+  -ms-text-size-adjust: 100%;/* 1 */
+  text-size-adjust: 100%;/* 1 */
+  -ms-overflow-style: -ms-autohiding-scrollbar;/* 2 */
+  overflow-y: scroll;/* 3 */;
+}
+
+/* Chrome 40+, iOS 8+, Safari 8+, -nPrevent modern browsers from displaying `audio` without controls.
+ *  Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+input[type="number"] {
+  width: auto;/* Firefox 36+ */;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;/* Safari 8+ */;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;/* Safari 8 */;
+}
+
+pre {
+  overflow: auto;/* Internet Explorer 11+ */;
+}
+
+small {
+  font-size: 75%;/* All browsers */;
+}
+
+[hidden], template {
+  display: none;
+}
+
+textarea {
+  overflow: auto;/* Internet Explorer 11+ */;
+}
+
+/* Android 4.4+, Chrome 40+, Firefox 36+, iOS 8+, Safari 8+ */
+
+[unselectable] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;/* Styling not present in IE 8/9/10/11, Safari, and  Chrome */;
+}
+
+img {
+  border: 0;/* Remove border when inside `a` element in IE 8/9/10 */;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::before, ::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+/* remove margin and padding of all elements */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* specify the root styles of the document */
+
+:root {
+  text-rendering: optimizeLegibility;
+  cursor: default;
+  box-sizing: border-box;
+}
+
+/* specify the html background color */
+
+html {
+  background-color: #fff;
+}
+
+/* specify the text decoration of anchors */
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* specify media element style */
+
+audio, canvas, iframe, img, progress, svg, video {
+  vertical-align: baseline;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;/* Internet Explorer 11+, Windows Phone 8.1+ */;
+}
+
+/* specify inheritance of form elements */
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;/* Address `overflow` set to `hidden` in IE 8/9/10/11 */;
+}
+
+/* specify the minimum height of form elements */
+
+button, [type="button"], [type="date"], [type="datetime"], [type="datetime-local"], [type="email"], [type="month"], [type="number"], [type="password"], [type="reset"], [type="search"], [type="submit"], [type="tel"], [type="text"], [type="time"], [type="url"], [type="week"], select, textarea {
+  min-height: 1rem;
+}
+
+/* specify the font family of code elements */
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+}
+
+/* specify the list style of nav lists */
+
+nav ol, nav ul {
+  list-style: none;
+}
+
+/* style select like a standard input */
+
+select {
+  -moz-appearance: none;/* Firefox 36+ */
+  -webkit-appearance: none;/* Chrome 41+ */;
+}
+
+select::-ms-expand {
+  display: none;/* Internet Explorer 11+ */;
+}
+
+select::-ms-value {
+  color: currentColor;/* Internet Explorer 11+ */;
+}
+
+/* specify the border styles of tables */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* specify textarea resizability */
+
+textarea {
+  resize: vertical;
+}
+
+/* specify text selection background color and omit drop shadow */
+
+::-moz-selection {
+  text-shadow: none;
+  background-color: #b3d4fc;/* required when declaring ::selection */;
+}
+
+::selection {
+  text-shadow: none;
+  background-color: #b3d4fc;/* required when declaring ::selection */;
+}
+
+/* specify font-weight bold */
+
+b, strong {
+  font-weight: bold;
+}
+
+/* hide content from screens but not screenreaders */
+
+@media screen {
+  [hidden~="screen"] {
+    display: inherit;
+  }
+  [hidden~="screen"]:not(:active):not(:focus):not(:target) {
+    position: absolute!important;
+    clip: rect(0 0 0 0)!important;
+  }
+}
+

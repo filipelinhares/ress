@@ -10,9 +10,9 @@
 Render elements consistently. Style with best practices.
 
 ## Installation
-For now:
 
-[Download it](https://raw.githubusercontent.com/filipelinhares/sanilize.css/master/sanilize.scss) and install manually
+For now:
+[Download it](https://raw.githubusercontent.com/filipelinhares/sanilize.css/master/sanilize-min.css) and install manually
 
 ## Highlights
 
@@ -23,22 +23,7 @@ For now:
 - Border width works as expected ([reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#Values)) ([code](sanitize.scss#L116-L123)).
 - Text selections containing a drop shadow remain legible ([reference](https://twitter.com/miketaylr/status/12228805301)) ([code](sanitize.scss#L202-L207)).
 - Content may be hidden from the screen but not screenreaders ([reference](http://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/)) ([reference](https://www.drupal.org/node/897638)) ([code](sanitize.scss#L209-L220)).
-
-To give you even more control, [sanitize.scss](sanitize.scss) allows you to define your own defaults for box-sizing, font family, monospace font family, text rendering, selection background color, and smaller font size - all without over-declaring them later.
-
-```scss
-// overwrite defaults in sanilize.scss
-$default-text-rendering: optimizeSpeed;
-
-import 'vendors/sanilize.scss';
-```
-
-- **$default-box-sizing**: the default box-sizing is `border-box`.
-- **$default-font-family**: the default font family is `sans-serif`.
-- **$default-text-rendering**: the default text-rendering is `optimizeLegibility`.
-- **$default-monospace-font-family**: the default monospace font is `monospace`.
-- **$default-selection-background-color**: the default selection background color is `#B3D4FC`.
-- **$default-small-font-size**: the default small font size is `75%`.
+To give you even more control, [sanilize.css](sanilize.css) allows you to define your own defaults for box-sizing, font family, monospace font family, text rendering, selection background color, and smaller font size - all without over-declaring them later.
 
 ## Support
 
