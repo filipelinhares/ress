@@ -12,7 +12,7 @@ Render elements consistently. Style with best practices.
 ## Installation
 
 For now:
-[Download it](https://raw.githubusercontent.com/filipelinhares/sanilize.css/master/sanilize-min.css) and install manually
+[Download it](https://raw.githubusercontent.com/filipelinhares/sanilize.css/master/sanilize.min.css) and install manually
 
 ## Highlights
 

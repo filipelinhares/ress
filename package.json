@@ -1,6 +1,6 @@
 {
   "name": "sanilize.css",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Render elements consistently. Style with best practices.",
   "author": ["Jonathan Neal", "Nicolas Gallagher"],
   "license": "CC0",
