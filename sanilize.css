@@ -6,15 +6,15 @@
  */
 
 :root {
-  -webkit-text-size-adjust: 100%;/* 1 */
-  -ms-text-size-adjust: 100%;/* 1 */
-  text-size-adjust: 100%;/* 1 */
-  -ms-overflow-style: -ms-autohiding-scrollbar;/* 2 */
-  overflow-y: scroll;/* 3 */;
+  -webkit-text-size-adjust: 100%; /* 1 */
+  -ms-text-size-adjust: 100%; /* 1 */
+  text-size-adjust: 100%; /* 1 */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* 2 */
+  overflow-y: scroll; /* 3 */;
 }
 
 /* Chrome 40+, iOS 8+, Safari 8+, -nPrevent modern browsers from displaying `audio` without controls.
- *  Remove excess height in iOS 5 devices.
+ * Remove excess height in iOS 5 devices.
  */
 
 audio:not([controls]) {
@@ -29,36 +29,50 @@ audio:not([controls]) {
  * Correct `block` display not defined for `main` in IE 11.
  */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
 
 input[type="number"] {
-  width: auto;/* Firefox 36+ */;
+  width: auto; /* Firefox 36+ */;
 }
 
 input[type="search"] {
-  -webkit-appearance: textfield;/* Safari 8+ */;
+  -webkit-appearance: textfield; /* Safari 8+ */;
 }
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;/* Safari 8 */;
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; /* Safari 8 */;
 }
 
 pre {
-  overflow: auto;/* Internet Explorer 11+ */;
+  overflow: auto; /* Internet Explorer 11+ */;
 }
 
 small {
-  font-size: 75%;/* All browsers */;
+  font-size: 75%; /* All browsers */;
 }
 
-[hidden], template {
+[hidden],
+template {
   display: none;
 }
 
 textarea {
-  overflow: auto;/* Internet Explorer 11+ */;
+  overflow: auto; /* Internet Explorer 11+ */;
 }
 
 /* Android 4.4+, Chrome 40+, Firefox 36+, iOS 8+, Safari 8+ */
@@ -71,14 +85,16 @@ textarea {
 }
 
 abbr[title] {
-  border-bottom: 1px dotted;/* Styling not present in IE 8/9/10/11, Safari, and  Chrome */;
+  border-bottom: 1px dotted; /* Styling not present in IE 8/9/10/11, Safari, and  Chrome */;
 }
 
 img {
-  border: 0;/* Remove border when inside `a` element in IE 8/9/10 */;
+  border: 0; /* Remove border when inside `a` element in IE 8/9/10 */;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: inherit;
 }
 
@@ -87,19 +103,20 @@ img {
   line-height: inherit;
 }
 
-::before, ::after {
+::before,
+::after {
   text-decoration: inherit;
   vertical-align: inherit;
 }
 
-/* remove margin and padding of all elements */
+/* Remove margin and padding of all elements */
 
 * {
   padding: 0;
   margin: 0;
 }
 
-/* specify the root styles of the document */
+/* Specify the root styles of the document */
 
 :root {
   text-rendering: optimizeLegibility;
@@ -107,32 +124,44 @@ img {
   box-sizing: border-box;
 }
 
-/* specify the html background color */
+/* Specify the html background color */
 
 html {
   background-color: #fff;
 }
 
-/* specify the text decoration of anchors */
+/* Specify the text decoration of anchors */
 
 a {
   text-decoration: none;
   background-color: transparent;
 }
 
-/* specify media element style */
+/* Specify media element style */
 
-audio, canvas, iframe, img, progress, svg, video {
+audio,
+canvas,
+iframe,
+img,
+progress,
+svg,
+video {
   vertical-align: baseline;
 }
 
-audio, canvas, progress, video {
-  display: inline-block;/* Internet Explorer 11+, Windows Phone 8.1+ */;
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* Internet Explorer 11+, Windows Phone 8.1+ */;
 }
 
-/* specify inheritance of form elements */
+/* Specify inheritance of form elements */
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-style: inherit;
   font-weight: inherit;
@@ -140,82 +169,106 @@ button, input, select, textarea {
 }
 
 button {
-  overflow: visible;/* Address `overflow` set to `hidden` in IE 8/9/10/11 */;
+  overflow: visible; /* Address `overflow` set to `hidden` in IE 8/9/10/11 */;
 }
 
-/* specify the minimum height of form elements */
+/* Specify the minimum height of form elements */
 
-button, [type="button"], [type="date"], [type="datetime"], [type="datetime-local"], [type="email"], [type="month"], [type="number"], [type="password"], [type="reset"], [type="search"], [type="submit"], [type="tel"], [type="text"], [type="time"], [type="url"], [type="week"], select, textarea {
+button,
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
   min-height: 1rem;
 }
 
-/* remove inner padding and border in Firefox 4+. */
+/* Remove inner padding and border in Firefox 4+. */
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
 
-/* specify the font family of code elements */
+/* Specify the font family of code elements */
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace,monospace;
 }
 
 /* specify the list style of nav lists */
 
-nav ol, nav ul {
+nav ol,
+nav ul {
   list-style: none;
 }
 
-/* style select like a standard input */
+/* Style select like a standard input */
 
 select {
-  -moz-appearance: none;/* Firefox 36+ */
-  -webkit-appearance: none;/* Chrome 41+ */;
+  -moz-appearance: none; /* Firefox 36+ */
+  -webkit-appearance: none; /* Chrome 41+ */;
 }
 
 select::-ms-expand {
-  display: none;/* Internet Explorer 11+ */;
+  display: none; /* Internet Explorer 11+ */;
 }
 
 select::-ms-value {
-  color: currentColor;/* Internet Explorer 11+ */;
+  color: currentColor; /* Internet Explorer 11+ */;
 }
 
-/* specify the border styles of tables */
+/* Specify the border styles of tables */
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* specify textarea resizability */
+/* Specify textarea resizability */
 
 textarea {
   resize: vertical;
 }
 
-/* specify text selection background color and omit drop shadow */
+/* Specify text selection background color and omit drop shadow */
 
 ::-moz-selection {
   text-shadow: none;
-  background-color: #b3d4fc;/* required when declaring ::selection */;
+  background-color: #b3d4fc; /* Required when declaring ::selection */;
 }
 
 ::selection {
   text-shadow: none;
-  background-color: #b3d4fc;/* required when declaring ::selection */;
+  background-color: #b3d4fc; /* Required when declaring ::selection */;
 }
 
-/* specify font-weight bold */
+/* Specify font-weight bold */
 
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
-/* hide content from screens but not screenreaders */
+/* Hide content from screens but not screenreaders */
 
 @media screen {
   [hidden~="screen"] {
@@ -226,4 +279,3 @@ b, strong {
     clip: rect(0 0 0 0)!important;
   }
 }
-
