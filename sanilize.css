@@ -149,6 +149,14 @@ button, [type="button"], [type="date"], [type="datetime"], [type="datetime-local
   min-height: 1rem;
 }
 
+/* remove inner padding and border in Firefox 4+. */
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
 /* specify the font family of code elements */
 
 code, kbd, pre, samp {
