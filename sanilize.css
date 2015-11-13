@@ -1,16 +1,10 @@
-/*
- * 1: Prevent IOS and IE text size adjust after device orientation change,
- * without disabling user zoom.
- * 2: IE11
- * 3: All browsers without overlaying scrollbars
- */
+/* Specify the root styles of the document */
 
 :root {
-  -webkit-text-size-adjust: 100%; /* 1 */
-  -ms-text-size-adjust: 100%; /* 1 */
-  text-size-adjust: 100%; /* 1 */
-  -ms-overflow-style: -ms-autohiding-scrollbar; /* 2 */
-  overflow-y: scroll; /* 3 */;
+  background-color: #fff;
+  cursor: default;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 
 /* Chrome 40+, iOS 8+, Safari 8+, -nPrevent modern browsers from displaying `audio` without controls.
@@ -43,6 +37,16 @@ nav,
 section,
 summary {
   display: block;
+}
+
+input {
+  border-radius: 0;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* iOS 8+ */;
 }
 
 input[type="number"] {
@@ -127,7 +131,9 @@ img {
 /* Specify the html background color */
 
 html {
-  background-color: #fff;
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* Edge 12+, Internet Explorer 11- */
+  overflow-y: scroll; /* All browsers without overlaying scrollbars */
+  -webkit-text-size-adjust: 100%; /* iOS 8+ */;
 }
 
 /* Specify the text decoration of anchors */
@@ -147,6 +153,10 @@ progress,
 svg,
 video {
   vertical-align: baseline;
+}
+
+svg:not(:root) {
+  overflow: hidden; /* Internet Explorer 11- */;
 }
 
 audio,
@@ -170,6 +180,7 @@ textarea {
 
 button {
   overflow: visible; /* Address `overflow` set to `hidden` in IE 8/9/10/11 */;
+  -webkit-appearance: button; /* iOS 8+ */;
 }
 
 /* Specify the minimum height of form elements */
@@ -203,7 +214,6 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-
 
 /* Specify the font family of code elements */
 
@@ -279,3 +289,4 @@ strong {
     clip: rect(0 0 0 0)!important;
   }
 }
+
