@@ -1,5 +1,5 @@
 {
-  "name": "sanilize.css",
+  "name": "sanilize",
   "version": "0.3.0",
   "description": "Render elements consistently. Style with best practices.",
   "author": ["Jonathan Neal", "Nicolas Gallagher"],

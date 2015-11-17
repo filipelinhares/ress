@@ -10,8 +10,15 @@
 Render elements consistently. Style with best practices.
 
 ## Installation
-For now:
-[Download it](https://raw.githubusercontent.com/filipelinhares/sanilize.css/master/sanilize.min.css) and install manually
+**Bower**
+```sh
+bower install --save sanilize
+```
+
+**NPM**
+```sh
+npm install --save sanilize
+```
 
 ## Support
 Currently tested and supported browsers include **Android 4.3-4.4+**, **Chrome 39-45+**, **Edge 12+**, **Firefox 34-40+**, **Internet Explorer 9-11**, **iOS 7-8+**, **Safari 7-9+**, **Windows Phone 8.1+**.
