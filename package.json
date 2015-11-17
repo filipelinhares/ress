@@ -1,18 +1,10 @@
 {
   "name": "sanilize",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Render elements consistently. Style with best practices.",
   "author": ["Jonathan Neal", "Nicolas Gallagher"],
   "license": "CC0",
   "style": "dist/index.css",
-  "files": [
-    "dist",
-    "LICENSE.md",
-    "README.md",
-    "sanitize.scss",
-    "index.js",
-    "gulpfile.js"
-  ],
   "homepage": "https://github.com/filipelinhares/sanilize.css",
   "repository": {
     "type": "git",
@@ -20,16 +12,5 @@
   },
   "bugs": {
     "url": "https://github.com/filipelinhares/sanilize.css/issues"
-  },
-  "devDependencies": {
-    "autoprefixer-core": "^5.1.7",
-    "gulp": "^3.8.11",
-    "gulp-minify-css": "^1.0.0",
-    "gulp-postcss": "^4.0.3",
-    "gulp-sass": "^1.3.3",
-    "gulp-sourcemaps": "^1.5.0"
-  },
-  "scripts": {
-    "build": "gulp"
   }
 }
