@@ -87,8 +87,12 @@ textarea {
   user-select: none;
 }
 
+/* Address inconsistent styling of `abbr[title]` */
+
 abbr[title] {
-  border-bottom: 1px dotted; /* Styling not present in IE 8/9/10/11, Safari, and  Chrome */
+  border-bottom: none; /* Correct styling in Firefox 39 and Opera 12 */
+  text-decoration: underline; /* Correct missing styling in Chrome, Edge, IE, Opera, and Safari */
+  text-decoration: underline dotted; /* Correct missing styling in Chrome, Edge, IE, Opera, and Safari */
 }
 
 img {
