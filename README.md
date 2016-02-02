@@ -10,12 +10,6 @@
 Render elements consistently. Style with best practices.
 
 ## Installation
-**Bower**
-```sh
-bower install --save sanilize
-```
-
-**NPM**
 ```sh
 npm install --save sanilize
 ```
