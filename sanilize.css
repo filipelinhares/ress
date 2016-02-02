@@ -1,27 +1,65 @@
+/* # =================================================================
+   # Global selectors
+   # ================================================================= */
+
 /* Specify the root styles of the document */
 
 :root {
   background-color: #fff;
   cursor: default;
   box-sizing: border-box;
-  text-rendering: optimizeLegibility;
 }
 
-/* Chrome 40+, iOS 8+, Safari 8+, -nPrevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+/* Remove margin and padding of all elements */
+
+* {
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+/* Specify the html background color */
+
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* Edge 12+, Internet Explorer 11- */
+  overflow-y: scroll; /* All browsers without overlaying scrollbars */
+  -webkit-text-size-adjust: 100%; /* iOS 8+ */
+}
+
+/* # =================================================================
+   # General elements
+   # ================================================================= */
 
 audio:not([controls]) {
-  display: none;
-  height: 0;
+  display: none; /* Chrome 40+, iOS 8+, Safari 8+, -nPrevent modern browsers from displaying `audio` without controls */
+  height: 0; /* Remove excess height in iOS 5 devices */
 }
 
 /*
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
- * and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
+  * Correct `block` display not defined for any HTML5 element in IE 8/9.
+  * Correct `block` display not defined for `details` or `summary` in IE 10/11
+  * and Firefox.
+  * Correct `block` display not defined for `main` in IE 11.
+*/
 
 article,
 aside,
@@ -37,6 +75,95 @@ section,
 summary {
   display: block;
 }
+
+pre {
+  overflow: auto; /* Internet Explorer 11+ */
+}
+
+small {
+  font-size: 75%; /* All browsers */
+}
+
+[hidden],
+template {
+  display: none;
+
+}
+/* Android 4.4+, Chrome 40+, Firefox 36+, iOS 8+, Safari 8+ */
+
+[unselectable] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Address inconsistent styling of `abbr[title]` */
+
+abbr[title] {
+  border-bottom: none; /* Correct styling in Firefox 39 and Opera 12 */
+  text-decoration: underline; /* Correct missing styling in Chrome, Edge, IE, Opera, and Safari */
+  text-decoration: underline dotted; /* Correct missing styling in Chrome, Edge, IE, Opera, and Safari */
+}
+
+/* Specify the text decoration of anchors */
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* Specify the font family of code elements */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+
+/* specify the list style of nav lists */
+
+nav ol,
+nav ul {
+  list-style: none;
+}
+
+/* Specify the border styles of tables */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Address inconsistent styling of b and strong */
+
+b,
+strong {
+  font-weight: inherit; /* Correct duplicate application of `bolder` in Safari 6.0.2 */
+}
+
+b,
+strong {
+  font-weight: bolder; /* Correct style set to `bold` in Edge 12+, Safari 6.2+, and Chrome 18+ */
+}
+
+/* Address styling not present in Safari and Chrome */
+
+dfn {
+  font-style: italic;
+}
+
+/* Address styling not present in IE 8/9 */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/* # =================================================================
+   # Forms
+   # ================================================================= */
 
 input {
   border-radius: 0;
@@ -61,124 +188,19 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; /* Safari 8 */
 }
 
-pre {
-  overflow: auto; /* Internet Explorer 11+ */
-}
-
-small {
-  font-size: 75%; /* All browsers */
-}
-
-[hidden],
-template {
-  display: none;
-}
-
 textarea {
   overflow: auto; /* Internet Explorer 11+ */
-}
-
-/* Android 4.4+, Chrome 40+, Firefox 36+, iOS 8+, Safari 8+ */
-
-[unselectable] {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Address inconsistent styling of `abbr[title]` */
-
-abbr[title] {
-  border-bottom: none; /* Correct styling in Firefox 39 and Opera 12 */
-  text-decoration: underline; /* Correct missing styling in Chrome, Edge, IE, Opera, and Safari */
-  text-decoration: underline dotted; /* Correct missing styling in Chrome, Edge, IE, Opera, and Safari */
-}
-
-img {
-  border: 0; /* Remove border when inside `a` element in IE 8/9/10 */
-}
-
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
-
-* {
-  font-size: inherit;
-  line-height: inherit;
-}
-
-::before,
-::after {
-  text-decoration: inherit;
-  vertical-align: inherit;
-}
-
-/* Remove margin and padding of all elements */
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-/* Specify the root styles of the document */
-
-:root {
-  text-rendering: optimizeLegibility;
-  cursor: default;
-  box-sizing: border-box;
-}
-
-/* Specify the html background color */
-
-html {
-  -ms-overflow-style: -ms-autohiding-scrollbar; /* Edge 12+, Internet Explorer 11- */
-  overflow-y: scroll; /* All browsers without overlaying scrollbars */
-  -webkit-text-size-adjust: 100%; /* iOS 8+ */
-}
-
-/* Specify the text decoration of anchors */
-
-a {
-  text-decoration: none;
-  background-color: transparent;
-}
-
-/* Specify media element style */
-
-audio,
-canvas,
-iframe,
-img,
-progress,
-svg,
-video {
-  vertical-align: baseline;
-}
-
-svg:not(:root) {
-  overflow: hidden; /* Internet Explorer 11- */
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block; /* Internet Explorer 11+, Windows Phone 8.1+ */
+  resize: vertical; /* Specify textarea resizability */
 }
 
 /* Specify inheritance of form elements */
 
 button,
 input,
+optgroup,
 select,
 textarea {
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  color: inherit;
+  font: inherit;
 }
 
 button {
@@ -218,20 +240,19 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/* Specify the font family of code elements */
+/* Replace focus style removed in the border reset above */
 
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
-/* specify the list style of nav lists */
-
-nav ol,
-nav ul {
-  list-style: none;
+button,
+html input[type="button"], /* Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* Correct inability to style clickable `input` types in iOS */
+  cursor: pointer; /* Improve usability and consistency of cursor style between image-type `input` and others */
 }
 
 /* Style select like a standard input */
@@ -249,37 +270,38 @@ select::-ms-value {
   color: currentColor; /* Internet Explorer 11+ */
 }
 
-/* Specify the border styles of tables */
+/* # =================================================================
+   # Specify media element style
+   # ================================================================= */
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+img {
+  border: 0; /* Remove border when inside `a` element in IE 8/9/10 */
 }
 
-/* Specify textarea resizability */
-
-textarea {
-  resize: vertical;
+audio,
+canvas,
+iframe,
+img,
+progress,
+svg,
+video {
+  vertical-align: baseline;
 }
 
-/* Specify text selection background color and omit drop shadow */
-
-::-moz-selection {
-  text-shadow: none;
-  background-color: #b3d4fc; /* Required when declaring ::selection */
+svg:not(:root) {
+  overflow: hidden; /* Internet Explorer 11- */
 }
 
-::selection {
-  text-shadow: none;
-  background-color: #b3d4fc; /* Required when declaring ::selection */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* Internet Explorer 11+, Windows Phone 8.1+ */
 }
 
-/* Specify font-weight bold */
-
-b,
-strong {
-  font-weight: bold;
-}
+/* # =================================================================
+   # Acessibility
+   # ================================================================= */
 
 /* Hide content from screens but not screenreaders */
 
@@ -291,4 +313,65 @@ strong {
     position: absolute !important;
     clip: rect(0 0 0 0) !important;
   }
+}
+
+/* specify the progress cursor of updating elements */
+
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* specify the pointer cursor of trigger elements */
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+
+[aria-disabled] {
+  cursor: default;
+}
+
+/* specify the style of visually hidden yet accessible elements */
+
+[hidden][aria-hidden="false"] {
+  clip: rect(0 0 0 0);
+  display: inherit;
+  position: absolute;
+
+  @nest &:focus {
+    clip: auto;
+  }
+}
+
+/* Remove delay from tapping on clickable elements */
+
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+  touch-action: manipulation;
+}
+
+/* # =================================================================
+   # Selection
+   # ================================================================= */
+
+/* Specify text selection background color and omit drop shadow */
+
+::-moz-selection {
+  background-color: #b3d4fc; /* required when declaring ::selection */
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc; /* required when declaring ::selection */
+  color: #fff;
+  text-shadow: none;
 }
