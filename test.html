@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanilize CSS</title>
+<link rel="stylesheet" href="sanilize.css">
+<style>
+
+  .test-suite {
+    padding: 20px;
+    color: #333;
+    background: #f2f2f2;
+    counter-reset: test-suit;
+  }
+
+  .test-suite-title {
+    padding: 25px 40px;
+    font-size: 2rem;
+    color: #666;
+    background-color: #ccc;
+    border-bottom: 2px solid #999;
+    border-radius: 3px;
+    font-family: sans-serif;
+  }
+
+  .test-module {
+    padding: 15px 40px;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    border-radius: 3px;
+    font-family: sans-serif;
+    counter-reset: test-it;
+  }
+
+  .test-module:before {
+    margin-right: 10px;
+    text-transform: capitalize;
+
+    content: counter(test-suit);
+    counter-increment: test-suit;
+  }
+
+  .test-it {
+    padding: 10px 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #444;
+    text-transform: capitalize;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: sans-serif;
+  }
+
+  .test-it:before {
+    margin-right: 10px;
+
+    content: counter(test-suit) "." counter(test-it);
+    counter-increment: test-it;
+  }
+  .test-suite-title code,
+  .test-module code,
+  .test-it code {
+    padding: 3px 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    text-transform: lowercase;
+    background: #222;
+    border-radius: 3px;
+  }
+
+  /* Custom helpers */
+
+  /**
+   * Test whether the body's margin has been removed
+   */
+
+  body {
+    background: red;
+  }
+
+  /**
+   * Highlight the bounds of direct children of a test block
+   */
+
+  .test-run--highlightEl > * {
+    outline: 1px solid #ADD8E6;
+  }
+</style>
+
+<div class="test-suite">
+
+  <h1 class="test-suite-title">Sanilize.css</h1>
+
+  <h2 class="test-module"><code>html</code></h2>
+  <h3 class="test-it">should have sans-serif font family (opinionated)</h3>
+  <div class="test-run">
+    abcdefghijklmnopqrstuvwxyz
+  </div>
+
+  <h2 class="test-module"><code>body</code></h2>
+  <h3 class="test-it">should have no margin (opinionated)</h3>
+  <div class="test-run">
+    (there should be no red background visible on this page)
+  </div>
+
+  <h2 class="test-module">
+    <code>article</code>, <code>aside</code>, <code>details</code>,
+    <code>figure</code>, <code>figcaption</code>, <code>footer</code>,
+    <code>header</code>, <code>hgroup</code>, <code>main</code>,
+    <code>menu</code>, <code>nav</code>, <code>section</code>,
+    <code>summary</code>
+  </h2>
+  <h3 class="test-it">should render as block</h3>
+  <div class="test-run test-run--highlightEl">
+    <article>article</article>
+    <aside>aside</aside>
+    <details>
+      <summary>summary</summary>
+      details
+    </details>
+    <figure>
+      figure
+      <figcaption>figcaption</figcaption>
+    </figure>
+    <footer>footer</footer>
+    <header>header</header>
+    <hgroup>hgroup</hgroup>
+    <main>main</main>
+    <menu><li>menu</li></menu>
+    <nav>nav</nav>
+    <section>section</section>
+  </div>
+
+  <h2 class="test-module"><code>audio</code>, <code>canvas</code>, <code>progress</code>, <code>video</code></h2>
+  <h3 class="test-it">should render as inline-block and baseline-aligned</h3>
+  <div class="test-run test-run--highlightEl">
+    <audio controls>audio</audio>
+    <canvas>canvas</canvas>
+    <progress>progress</progress>
+    <video controls>video</video>
+  </div>
+
+  <h2 class="test-module"><code>audio:not([controls])</code>, <code>template</code>, <code>[hidden]</code></h2>
+  <h3 class="test-it">should not display</h3>
+  <div class="test-run test-run--highlightEl">
+    <audio>audio</audio>
+    <template>
+      <h1>{{title}}</h1>
+      <content></content>
+    </template>
+    <p hidden>This should be hidden</p>
+  </div>
+
+  <h2 class="test-module"><code>a</code></h2>
+  <h3 class="test-it">should have a transparent background when active</h3>
+  <div class="test-run">
+    <a href="#non">dummy anchor</a>
+  </div>
+  <h3 class="test-it">should not have a focus outline when both focused and hovered (opinionated)</h3>
+  <div class="test-run">
+    <a href="#non">dummy anchor</a>
+  </div>
+
+  <h2 class="test-module"><code>abbr[title]</code></h2>
+  <h3 class="test-it">should have a dotted bottom border</h3>
+  <div class="test-run">
+    <abbr title="abbreviation">abbr</abbr>
+  </div>
+
+  <h2 class="test-module"><code>b</code>, <code>strong</code></h2>
+  <h3 class="test-it">should have bold font-weight</h3>
+  <div class="test-run">
+    <b>b</b>
+    <strong>strong</strong>
+  </div>
+
+  <h2 class="test-module"><code>dfn</code></h2>
+  <h3 class="test-it">should have italic font-style</h3>
+  <div class="test-run">
+    <dfn>dfn</dfn>
+  </div>
+
+  <h2 class="test-module"><code>h1</code></h2>
+  <h3 class="test-it">should not change size within an <code>article</code></h3>
+  <div class="test-run">
+    <h1>Heading (control)</h1>
+    <article>
+      <h1>Heading (in article)</h1>
+    </article>
+  </div>
+  <h3 class="test-it">should not change size within a <code>section</code></h3>
+  <div class="test-run">
+    <h1>Heading (control)</h1>
+    <section>
+      <h1>Heading (in section)</h1>
+    </section>
+  </div>
+
+  <h2 class="test-module"><code>mark</code></h2>
+  <h3 class="test-it">should have a yellow background</h3>
+  <div class="test-run">
+    <mark>mark</mark>
+  </div>
+
+  <h2 class="test-module"><code>small</code></h2>
+  <h3 class="test-it">should render equally small in all browsers</h3>
+  <div class="test-run">
+    control. <small>small.</small>
+  </div>
+
+  <h2 class="test-module"><code>sub</code> and <code>sup</code></h2>
+  <h3 class="test-it">should not affect a line's visual line-height</h3>
+  <div class="test-run test-run--highlightEl">
+    <p>control.</p>
+    <p>control. <sub>sub.</sub></p>
+    <p>control. <sup>sup.</sup></p>
+  </div>
+
+  <h2 class="test-module"><code>img</code></h2>
+  <h3 class="test-it">should not have a border when wrapped in an anchor</h3>
+  <div class="test-run">
+    <a href="#non">
+      <!-- scaled-up 1px image -->
+      <img style="background-color:#ADD8E6" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="100" height="100">
+    </a>
+  </div>
+
+  <h2 class="test-module"><code>svg</code></h2>
+  <h3 class="test-it">should not overflow</h3>
+  <div class="test-run test-run--highlightEl">
+    <svg width="100px" height="100px">
+      <circle cx="100" cy="100" r="100" fill="#ADD8E6" />
+    </svg>
+  </div>
+
+  <h2 class="test-module"><code>figure</code></h2>
+  <h3 class="test-it">should have margins</h3>
+  <div class="test-run" style="outline:1px solid #ADD8E6; overflow:hidden;">
+    <figure>
+      <img style="background-color:#ADD8E6" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="400" height="200">
+    </figure>
+  </div>
+
+  <h2 class="test-module"><code>hr</code></h2>
+  <h3 class="test-it">should have a <code>content-box</code> box model</h3>
+  <div class="test-run" style="">
+    <hr style="height:2px; border:solid #ADD8E6; border-width:2px 0;">
+  </div>
+
+  <h2 class="test-module"><code>pre</code></h2>
+  <h3 class="test-it">should trigger a scrollbar when too wide for its container</h3>
+  <div class="test-run" style="max-width:300px; outline:1px solid #ADD8E6;">
+    <pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</pre>
+  </div>
+
+  <h2 class="test-module"><code>code</code>, <code>kbd</code>, <code>pre</code>, <code>samp</code></h2>
+  <h3 class="test-it">should render <code>em</code>-unit preformatted text at the same absolute size as normal text</h3>
+  <div class="test-run">
+    <span>span: abcdefghijklmnopqrstuvwxyz.</span><br>
+    <code>code: abcdefghijklmnopqrstuvwxyz.</code><br>
+    <kbd>kbd: abcdefghijklmnopqrstuvwxyz.</kbd><br>
+    <samp>samp: abcdefghijklmnopqrstuvwxyz.</samp>
+    <pre>pre: abcdefghijklmnopqrstuvwxyz.</pre>
+  </div>
+
+  <h2 class="test-module"><code>button</code>, <code>input</code>, <code>optgroup</code>, <code>select</code>, <code>textarea</code></h2>
+  <h3 class="test-it">should inherit <code>font</code> from ancestor</h3>
+  <div class="test-run" style="font:bold italic 20px/1 serif;">
+    <button>button</button><br>
+    <input value="input"><br>
+    <select style="border:1px solid #999;">
+      <optgroup label="optgroup">
+        <option>option</option>
+      </optgroup>
+      <option>option</option>
+    </select><br>
+    <textarea>textarea</textarea>
+  </div>
+  <h3 class="test-it">should not have margins</h3>
+  <div class="test-run" id="form-collection-margins">
+    <style>
+      #form-collection-margins {
+        outline: 1px solid #ADD8E6;
+        overflow: hidden;
+      }
+
+      #form-collection-margins button,
+      #form-collection-margins input,
+      #form-collection-margins select,
+      #form-collection-margins textarea {
+        display: block;
+      }
+    </style>
+    <button>button</button>
+    <input value="input">
+    <select style="border:1px solid #999;">
+      <optgroup label="optgroup">
+        <option>option</option>
+      </optgroup>
+      <option>option</option>
+    </select>
+    <textarea>textarea</textarea>
+  </div>
+
+  <h2 class="test-module"><code>button</code></h2>
+  <h3 class="test-it">should have visible overflow</h3>
+  <div class="test-run" id="button-overflow">
+    <style>
+      #button-overflow button:after {
+        content: "";
+        background: #ADD8E6;
+        display: inline-block;
+        height: 10px;
+        position:relative;
+        right: -20px;
+        width: 10px;
+      }
+    </style>
+    <button>abcdefghijklmnopqrstuvwxyz</button>
+  </div>
+
+  <h2 class="test-module"><code>button</code>, <code>select</code></h2>
+  <h3 class="test-it">should not inherit <code>text-transform</code></h3>
+  <div class="test-run" style="text-transform:uppercase">
+    <button>button</button>
+    <select><option>option</option></select>
+  </div>
+
+  <h2 class="test-module"><code>button</code> and button-style <code>input</code></h2>
+  <h3 class="test-it">should have <code>pointer</code> cursor style</h3>
+  <div class="test-run">
+    <p><button>button</button></p>
+    <p><input type="image" src="http://lorempixel.com/90/24" alt="input (image)"></p>
+    <p><input type="button" value="input (button)"></p>
+    <p><input type="reset" value="input (reset)"></p>
+    <p><input type="submit" value="input (submit)"></p>
+  </div>
+  <h3 class="test-it">should be styleable</h3>
+  <div class="test-run" id="button-like-style">
+    <style>
+      #button-like-style button,
+      #button-like-style input {
+        background: #ADD8E6;
+        border: 2px solid black;
+        border-radius: 2px;
+        padding: 5px;
+      }
+    </style>
+    <p><button>button</button></p>
+    <p><input type="image" src="http://lorempixel.com/90/24" alt="input (image)"></p>
+    <p><input type="button" value="input (button)"></p>
+    <p><input type="reset" value="input (reset)"></p>
+    <p><input type="submit" value="input (submit)"></p>
+  </div>
+
+  <h2 class="test-module">disabled <code>button</code> and <code>input</code></h2>
+  <h3 class="test-it">should have <code>default</code> cursor style</h3>
+  <div class="test-run">
+    <p><button disabled>button</button></p>
+    <p><input disabled type="image" src="http://lorempixel.com/90/24" alt="input (image)"></p>
+    <p><input disabled type="button" value="input (button)"></p>
+    <p><input disabled type="reset" value="input (reset)"></p>
+    <p><input disabled type="submit" value="input (submit)"></p>
+  </div>
+
+  <h2 class="test-module"><code>button</code>, <code>input</code></h2>
+  <h3 class="test-it">should not have extra inner padding in Firefox</h3>
+  <div class="test-run" id="button-input-padding">
+    <style>
+      #button-input-padding button,
+      #button-input-padding input {
+        border: 0;
+        padding: 0;
+        outline: 1px solid #ADD8E6;
+      }
+    </style>
+    <p><button>button</button></p>
+    <p><input value="input (text)"></p>
+    <p><input type="button" value="input (button)"></p>
+    <p><input type="reset" value="input (reset)"></p>
+    <p><input type="submit" value="input (submit)"></p>
+  </div>
+
+  <h2 class="test-module"><code>input</code></h2>
+  <h3 class="test-it">should not inherit <code>line-height</code></h3>
+  <div class="test-run" style="line-height:50px">
+    <input value="input (text)">
+  </div>
+
+  <h2 class="test-module"><code>input[type="checkbox"]</code>, <code>input[type="radio"]</code></h2>
+  <h3 class="test-it">should have a <code>border-box</code> box model</h3>
+  <div class="test-run test-run--highlightEl" id="radio-box-model">
+    <style>
+      #radio-box-model {
+        width: 200px;
+        border: 1px solid red;
+      }
+
+      #radio-box-model input {
+        width: 100%;
+        border: 5px solid #ADD8E6;
+        display: block;
+        position: relative;
+      }
+    </style>
+    <input type="checkbox">
+    <input type="radio" name="rad">
+  </div>
+  <h3 class="test-it">should not have padding</h3>
+  <div class="test-run test-run--highlightEl">
+    <input type="checkbox">
+    <input type="radio" name="rad">
+  </div>
+
+  <h2 class="test-module"><code>input[type="number"]</code></h2>
+  <h3 class="test-it">should display a default cursor for the decrement button's click target in Chrome</h3>
+  <div class="test-run">
+    <input style="height:50px; font-size:15px;" type="number" id="in" min="0" max="10" value="5">
+  </div>
+
+  <h2 class="test-module"><code>input[type="search"]</code></h2>
+  <h3 class="test-it">should be styleable</h3>
+  <div class="test-run">
+    <input type="search" style="border:1px solid #ADD8E6; padding:10px; width:200px;">
+  </div>
+  <h3 class="test-it">should not have a cancel button in Safari or Chrome</h3>
+  <div class="test-run">
+    <input type="search" value="search">
+  </div>
+
+  <h2 class="test-module"><code>fieldset</code></h2>
+  <h3 class="test-it">should have consistent border, padding, and margin</h3>
+  <div class="test-run">
+    <fieldset>
+      <div style="width:100%; height:100px; background:#ADD8E6;"></div>
+    </fieldset>
+  </div>
+
+  <h2 class="test-module"><code>legend</code></h2>
+  <h3 class="test-it">should inherit color</h3>
+  <div class="test-run" style="color:#ADD8E6;">
+    <fieldset>
+      <legend>legend</legend>
+    </fieldset>
+  </div>
+  <h3 class="test-it">should not have padding</h3>
+  <div class="test-run">
+    <fieldset>
+      <legend>legend</legend>
+    </fieldset>
+  </div>
+
+  <h2 class="test-module"><code>textarea</code></h2>
+  <h3 class="test-it">should not have a scrollbar unless overflowing</h3>
+  <div class="test-run">
+    <textarea>textarea</textarea>
+  </div>
+
+  <h2 class="test-module"><code>table</code></h2>
+  <h3 class="test-it">should not have spaces between cells</h3>
+  <div class="test-run">
+    <table>
+      <caption>Jimi Hendrix - albums</caption>
+      <thead>
+        <tr>
+          <th>Album</th>
+          <th>Year</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Album</th>
+          <th>Year</th>
+          <th>Price</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Are You Experienced</td>
+          <td>1967</td>
+          <td>$10.00</td>
+        </tr>
+        <tr>
+          <td>Axis: Bold as Love</td>
+          <td>1967</td>
+          <td>$12.00</td>
+        </tr>
+        <tr>
+          <td>Electric Ladyland</td>
+          <td>1968</td>
+          <td>$10.00</td>
+        </tr>
+        <tr>
+          <td>Band of Gypsys</td>
+          <td>1970</td>
+          <td>$12.00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
