@@ -5,7 +5,6 @@
 /* Specify the root styles of the document */
 
 :root {
-  background-color: #fff;
   cursor: default;
   box-sizing: border-box;
 }
@@ -14,13 +13,6 @@
 ::before,
 ::after {
   box-sizing: inherit;
-  border-style: solid;
-  border-width: 0;
-}
-
-* {
-  font-size: inherit;
-  line-height: inherit;
 }
 
 ::before,
@@ -255,6 +247,11 @@ input[type="submit"] {
   cursor: pointer; /* Improve usability and consistency of cursor style between image-type `input` and others */
 }
 
+button,
+select {
+  text-transform: none; /* Firefox 40+, Internet Explorer 11- */
+}
+
 /* Style select like a standard input */
 
 select {
@@ -268,6 +265,16 @@ select::-ms-expand {
 
 select::-ms-value {
   color: currentColor; /* Internet Explorer 11+ */
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0; /* Correct `color` not being inherited in IE 8/9/10/11 */
 }
 
 /* # =================================================================
