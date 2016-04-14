@@ -227,15 +227,19 @@ textarea {
 /* Remove inner padding and border in Firefox 4+. */
 
 button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: 0;
   padding: 0;
 }
 
 /* Replace focus style removed in the border reset above */
 
 button:-moz-focusring,
-input:-moz-focusring {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   outline: 1px dotted ButtonText;
 }
 
