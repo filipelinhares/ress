@@ -99,11 +99,10 @@ abbr[title] {
   text-decoration: underline dotted; /* Correct missing styling in Chrome, Edge, IE, Opera, and Safari */
 }
 
-/* Specify the text decoration of anchors */
-
 a {
-  text-decoration: none;
-  background-color: transparent;
+  text-decoration: none; /* Specify the text decoration of anchors */
+  background-color: transparent; /* Remove the gray background on active links in IE 10 */
+  -webkit-text-decoration-skip: objects; /* Remove gaps in links underline in iOS 8+ and Safari 8+ */
 }
 
 /* Remove the outline on focused links when they are also active or hovered in all browsers */
