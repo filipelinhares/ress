@@ -291,6 +291,13 @@ legend {
   font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
 }
 
+/* Correct the text style of placeholders in Chrome, Edge, and Safari. */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
 /* # =================================================================
    # Specify media element style
    # ================================================================= */
