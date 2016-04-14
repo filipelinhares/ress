@@ -298,6 +298,11 @@ legend {
   opacity: 0.54;
 }
 
+[type="search"] {
+  -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
+  outline-offset: -2px; /* Correct the outline style in Safari */
+}
+
 /* # =================================================================
    # Specify media element style
    # ================================================================= */
