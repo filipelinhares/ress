@@ -30,7 +30,6 @@
 }
 
 html {
-  -ms-overflow-style: -ms-autohiding-scrollbar; /* Edge 12+, Internet Explorer 11- */
   overflow-y: scroll; /* All browsers without overlaying scrollbars */
   -webkit-text-size-adjust: 100%; /* iOS 8+ */
 }
@@ -116,13 +115,6 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-}
-
-/* specify the list style of nav lists */
-
-nav ol,
-nav ul {
-  list-style: none;
 }
 
 /* Address inconsistent styling of b and strong */
