@@ -18,9 +18,11 @@
   },
   "scripts": {
     "set-up": "npm install",
-    "compile": "cssnano sanilize.css dist/sanilize.min.css"
+    "compile": "cssnano sanilize.css dist/sanilize.min.css",
+    "test": "stylelint sanilize.css"
   },
   "devDependencies": {
-    "cssnano-cli": "^1.0.3"
+    "cssnano-cli": "^1.0.3",
+    "stylelint": "^6.7.1"
   }
 }
