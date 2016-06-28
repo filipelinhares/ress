@@ -1,25 +1,21 @@
 {
-  "name": "sanilize",
-  "version": "0.7.4",
-  "description": "Render elements consistently. Style with best practices.",
-  "author": [
-    "Jonathan Neal",
-    "Nicolas Gallagher"
-  ],
-  "license": "CC0",
-  "style": "dist/sanilize.min.css",
-  "homepage": "https://github.com/filipelinhares/sanilize.css",
+  "name": "ress",
+  "version": "1.0.0",
+  "description": "A modern CSS reset",
+  "author": "Filipe Linhares",
+  "license": "MIT",
+  "style": "dist/ssre.min.css",
+  "homepage": "https://github.com/filipelinhares/ress",
   "repository": {
     "type": "git",
-    "url": "https://github.com/filipelinhares/sanilize.css.git"
+    "url": "https://github.com/filipelinhares/ress.git"
   },
   "bugs": {
-    "url": "https://github.com/filipelinhares/sanilize.css/issues"
+    "url": "https://github.com/filipelinhares/ress/issues"
   },
   "scripts": {
-    "set-up": "npm install",
-    "compile": "cssnano sanilize.css dist/sanilize.min.css",
-    "test": "stylelint sanilize.css"
+    "compile": "cssnano ress.css dist/ress.min.css",
+    "test": "stylelint ress.css"
   },
   "devDependencies": {
     "cssnano-cli": "^1.0.3",

@@ -1,18 +1,30 @@
-# sanilize.css
+# ress
+Modern CSS reset
 
-> A merge between [sanitize.css][sanitize] by [Jonathan Neal][jonathan] and [normalize.css][normalize] by [Necolas][necolas]
-
-[jonathan]:https://github.com/jonathantneal
-[sanitize]:https://github.com/10up/sanitize.css
-[necolas]:https://github.com/necolas
-[normalize]:https://github.com/necolas/normalize.css
-
-Render elements consistently. Style with best practices.
+[![Build Status](https://travis-ci.org/filipelinhares/ress.svg?branch=v1.0.0)](https://travis-ci.org/filipelinhares/ress)
 
 ## Installation
 ```sh
-npm install --save sanilize
+npm install --save ress
 ```
 
+## Features
+1. Apply `box-sizing: border-box;` in all elements.
+2. Reset `padding` and `margin` in all elements.
+3. Specify `background-repeat: no-repeat` in all elements.
+4. Inherit `text-decoration` and `vertical-align` to `::before` and `::after`.
+5. Remove the `outline` when hovering in all browsers.
+6. Specify `font-family: monospace` in code elements.
+7. Reset `border-radius` in input elements.
+8. Specify font inheritance of form elements.
+9. Remove the default button styling in all browsers.
+10. Specify textarea resizability to vertical.
+
+## Crossbrowser
+**ress** uses [Normalize.css](https://github.com/necolas/normalize.css) under the hood with some customizations to apply a solid base to start your stylesheet.
+
+## Browser support
+Inherit from [Normalize](https://github.com/necolas/normalize.css#browser-support)
+
 ## License
-**sanilize.css** is dedicated to the [public domain](LICENSE.md).
+[MIT](LICENSE.md) © Filipe Linhares
