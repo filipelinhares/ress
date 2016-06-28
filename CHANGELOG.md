@@ -1,3 +1,14 @@
+## [v1.0.0]
+#### :zap: sanilize.css renamed to ress
+
+Before [Sanitize version 3.0.0](https://github.com/10up/sanitize.css/commit/8eb14223c1d5c928a2a51b17d4227849e7b5bdb7) be released, I was thinking about removing the description _"Merge between"_ from sanilize. Sanilize came with some deprecations that I wanted to keep and some new features that I wanted to remove.
+
+Now with the release of [Sanitize version 4.0.0](https://github.com/10up/sanitize.css/commit/bf3d695016cbd5d17c89361d4273f3d5f69aa0ee) It's time to a new way.
+
+Since the fork of sanitize, my goal with this project is to make a modern reset with crossbrowsers normalization. Now, **ress** has your own features and resets which you can use and customize.
+
+The new cool features are documented in the [README](README.md/#features). The source code is clean and pretty documented, you can read it to learn something :smile:
+
 ## [v0.7.4]
 - Release a landing page :smile: - [sanilize.css](http://filipelinhares.github.io/sanilize.css/)
 
