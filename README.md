@@ -1,7 +1,8 @@
-# ress
+![](http://i.imgur.com/1sXtcsA.png)
+
 Modern CSS reset
 
-[![Build Status](https://travis-ci.org/filipelinhares/ress.svg?branch=v1.0.0)](https://travis-ci.org/filipelinhares/ress)
+[![Build Status](https://travis-ci.org/filipelinhares/ress.svg?branch=master)](https://travis-ci.org/filipelinhares/ress)
 
 ## Installation
 ```sh
