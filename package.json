@@ -1,10 +1,10 @@
 {
   "name": "ress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern CSS reset",
   "author": "Filipe Linhares",
   "license": "MIT",
-  "style": "dist/ssre.min.css",
+  "main": "dist/ress.min.css",
   "homepage": "https://github.com/filipelinhares/ress",
   "repository": {
     "type": "git",
