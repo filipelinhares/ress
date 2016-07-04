@@ -12,7 +12,6 @@
     "normalize"
   ],
   "homepage": "https://github.com/filipelinhares/ress",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
