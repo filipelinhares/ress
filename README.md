@@ -1,8 +1,8 @@
-![](http://i.imgur.com/1sXtcsA.png)
+![A brunch and the ress name](http://i.imgur.com/1sXtcsA.png)
 
 Modern CSS reset
 
-[![Build Status](https://travis-ci.org/filipelinhares/ress.svg?branch=master)](https://travis-ci.org/filipelinhares/ress)
+[![Build Status](https://travis-ci.org/filipelinhares/ress.svg?branch=master)](https://travis-ci.org/filipelinhares/ress) ![Size](https://badge-size.herokuapp.com/filipelinhares/ress/master/dist/ress.min.css.svg?color=blue&label=file%20size)
 
 ## Installation
 ```sh
