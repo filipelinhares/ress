@@ -1,0 +1,22 @@
+{
+  "name": "ress",
+  "description": "A modern CSS reset",
+  "main": "dist/ress.min.css",
+  "authors": [
+    "Filipe Linhares"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "reset",
+    "normalize"
+  ],
+  "homepage": "https://github.com/filipelinhares/ress",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
