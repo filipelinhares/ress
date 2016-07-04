@@ -8,6 +8,10 @@ Modern CSS reset
 ```sh
 npm install --save ress
 ```
+or
+```sh
+bower install --save ress
+```
 
 ## Features
 1. Apply `box-sizing: border-box;` in all elements.
