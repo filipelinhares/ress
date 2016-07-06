@@ -306,12 +306,12 @@ video {
 
 ::-moz-selection {
   background-color: #b3d4fc; /* Required when declaring ::selection */
-  color: #fff;
+  color: #000;
   text-shadow: none;
 }
 
 ::selection {
   background-color: #b3d4fc; /* Required when declaring ::selection */
-  color: #fff;
+  color: #000;
   text-shadow: none;
 }
