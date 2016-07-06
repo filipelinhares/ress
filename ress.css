@@ -239,12 +239,6 @@ legend {
   font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
 }
 
-/* Correct the text style of placeholders in Chrome, Edge, and Safari */
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-}
-
 [type="search"] {
   -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
   outline-offset: -2px; /* Correct the outline style in Safari */
