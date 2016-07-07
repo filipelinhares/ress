@@ -143,6 +143,20 @@ input {
   border-radius: 0;
 }
 
+/* Apply cursor pointer to button elements */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"]
+[role="button"] {
+  cursor: pointer;
+}
+
+/* Replace pointer cursor in disabled elements */
+[disabled] {
+  cursor: default;
+}
+
 [type="number"] {
   width: auto; /* Firefox 36+ */
 }
