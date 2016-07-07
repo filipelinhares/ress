@@ -24,6 +24,7 @@ bower install --save ress
 8. Specify font inheritance of form elements.
 9. Remove the default button styling in all browsers.
 10. Specify textarea resizability to vertical.
+11. Apply `cursor: pointer` to button elements.
 
 ## Crossbrowser
 **ress** uses [Normalize.css](https://github.com/necolas/normalize.css) under the hood with some customizations to apply a solid base to start your stylesheet.
