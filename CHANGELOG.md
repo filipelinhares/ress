@@ -1,3 +1,22 @@
+## [v1.1.1]
+:tada: New feature and updates from Normalize
+
+### Added:
+- **[N]** Correct the display of `<summary>` in all browsers
+- Apply cursor pointer to button elements - (#7)
+
+### Removed:
+- **[N]** Placeholder normalization
+
+### Changed:
+- Text selection color to improves a11y - Thanks @dcorb
+
+**[N]**_ormalize updates._
+
+## [v1.0.1]
+Just README updates and code comments
+
+
 ## [v1.0.0]
 #### :zap: sanilize.css renamed to ress
 
