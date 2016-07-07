@@ -68,6 +68,10 @@ summary {
   display: block;
 }
 
+summary {
+  display: list-item; /* Add the correct display in all browsers */
+}
+
 small {
   font-size: 80%; /* Set font-size to 80% in `small` elements */
 }
