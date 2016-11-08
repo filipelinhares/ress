@@ -1,3 +1,6 @@
+## [v1.1.2]
+- Add missing comma on button elements selector
+
 ## [v1.1.1]
 :tada: New feature and updates from Normalize
 
