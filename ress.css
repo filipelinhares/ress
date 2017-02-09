@@ -17,6 +17,7 @@ html {
 *,
 ::before,
 ::after {
+  background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements */
   box-sizing: inherit;
 }
 
@@ -28,7 +29,6 @@ html {
 
 /* Remove margin, padding of all elements and set background-no-repeat as default */
 * {
-  background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements */
   padding: 0; /* Reset `padding` and `margin` of all elements */
   margin: 0;
 }
