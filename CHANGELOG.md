@@ -1,3 +1,6 @@
+## [v1.2.2]
+- Also set `background-repeat: no-repeat` to pseudo elements (#14)
+
 ## [v1.1.2]
 - Add missing comma on button elements selector
 

@@ -16,7 +16,7 @@ bower install --save ress
 ## Features
 1. Apply `box-sizing: border-box;` in all elements.
 2. Reset `padding` and `margin` in all elements.
-3. Specify `background-repeat: no-repeat` in all elements.
+3. Specify `background-repeat: no-repeat` in all elements and pseudo elements.
 4. Inherit `text-decoration` and `vertical-align` to `::before` and `::after`.
 5. Remove the `outline` when hovering in all browsers.
 6. Specify `font-family: monospace` in code elements.
