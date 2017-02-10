@@ -17,7 +17,7 @@ html {
 *,
 ::before,
 ::after {
-  background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements */
+  background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
   box-sizing: inherit;
 }
 
@@ -27,7 +27,6 @@ html {
   vertical-align: inherit;
 }
 
-/* Remove margin, padding of all elements and set background-no-repeat as default */
 * {
   padding: 0; /* Reset `padding` and `margin` of all elements */
   margin: 0;
