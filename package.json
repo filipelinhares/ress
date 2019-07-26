@@ -18,7 +18,7 @@
     "test": "stylelint ress.css"
   },
   "devDependencies": {
-    "cssnano-cli": "^1.0.3",
-    "stylelint": "^6.7.1"
+    "cssnano-cli": "^1.0.5",
+    "stylelint": "^10.1.0"
   }
 }
