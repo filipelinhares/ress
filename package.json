@@ -14,11 +14,11 @@
     "url": "https://github.com/filipelinhares/ress/issues"
   },
   "scripts": {
-    "compile": "csso ress.css --output dist/ress.min.css",
+    "compile": "cssnano ress.css dist/ress.min.css",
     "test": "stylelint ress.css"
   },
   "devDependencies": {
-    "csso-cli": "^2.0.2",
-    "stylelint": "^10.1.0"
+    "cssnano-cli": "^1.0.5",
+    "stylelint": "^11.0.0"
   }
 }
