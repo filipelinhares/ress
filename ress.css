@@ -91,12 +91,12 @@ samp {
 }
 
 pre {
-  font-size: 1em; /* Correct the odd `em` font sizing in all browsers. */
+  font-size: 1em; /* Correct the odd `em` font sizing in all browsers */
 }
 
 b,
 strong {
-  font-weight: bolder; /* Add the correct font weight in Chrome, Edge, and Safari. */
+  font-weight: bolder; /* Add the correct font weight in Chrome, Edge, and Safari */
 }
 
 /* https://gist.github.com/unruthless/413930 */
@@ -135,8 +135,8 @@ input {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari. */
-  outline-offset: -2px /* Correct the outline style in Safari. */
+  -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
+  outline-offset: -2px /* Correct the outline style in Safari */
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -157,7 +157,7 @@ textarea {
 }
 
 optgroup {
-  font-weight: bold; /* Restore the font weight unset by the previous rule. */
+  font-weight: bold; /* Restore the font weight unset by the previous rule */
 }
 
 button {
@@ -231,7 +231,7 @@ legend {
   display: table; /* Correct the text wrapping in Edge and IE */
   max-width: 100%; /* Correct the text wrapping in Edge and IE */
   white-space: normal; /* Correct the text wrapping in Edge and IE */
-  max-width: 100%; /* Correct the text wrapping in Edge 18- and IE. */
+  max-width: 100%; /* Correct the text wrapping in Edge 18- and IE */
 }
 
 ::-webkit-file-upload-button {
