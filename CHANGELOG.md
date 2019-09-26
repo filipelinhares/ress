@@ -1,3 +1,30 @@
+## [v2.0.0]
+:tada: Update with the latest version of Normalize.
+
+### Added:
+- Fill `svg` with the current color when `fill` is not set
+- `tab-size: 4` to `html`
+- **[N]** Set `text-transform: none` for `button`
+- **[N]** `outline-offset: -2px` to `[type="search"]`
+- **[N]** Correct `legend` style
+- **[N]** `height: 0` to `hr`
+- **[N]** `width: 0` to `[type="number"]::-webkit` spin button
+
+### Removed:
+- **[N]** Unnecessry normalization for general element
+- **[N]** `text-decoration-skip` from `a`.
+- **[N]** `color: inherit` from form elements
+- `overflow-y: scroll` in `html`
+- **[N]** `width: auto` from `[type="number"]`
+- `audio:not([controls])`
+- `::selection` normalization
+
+### Changed:
+- **[N]** `border-style: none` instead of 0 for `moz-focus`.
+- **[N]** `abbr[title]` style from `border-bottom` to `text-decoration`
+
+**[N]**_ormalize updates._
+
 ## [v1.2.2]
 - Also set `background-repeat: no-repeat` to pseudo elements (#14)
 
