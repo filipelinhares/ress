@@ -1,3 +1,8 @@
+## [v2.0.1]
+
+### Removed:
+- Remove duplicated rule for `[type="search"]`
+
 ## [v2.0.0]
 :tada: Update with the latest version of Normalize.
 
