@@ -1,0 +1,8 @@
+[disabled] {
+  cursor: default;
+}
+
+/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+[aria-disabled] {
+  cursor: default;
+}
