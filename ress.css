@@ -43,16 +43,9 @@ hr {
   height: 0; /* Add the correct box sizing in Firefox */
 }
 
-/*
-* Correct `block` display not defined for any HTML5 element in IE 8/9
-* Correct `block` display not defined for `details` or `summary` in IE 10/11
-* and Firefox
-* Correct `block` display not defined for `main` in IE 11
-*/
-
 details,
 main {
-  display: block;
+  display: block; /* Render the `main` element consistently in IE. */
 }
 
 summary {
@@ -237,11 +230,6 @@ legend {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* Correct the inability to style clickable types in iOS and Safari */
   font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
-}
-
-[type="search"] {
-  -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
-  outline-offset: -2px; /* Correct the outline style in Safari */
 }
 
 /* # =================================================================
