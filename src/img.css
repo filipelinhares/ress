@@ -1,0 +1,3 @@
+img {
+  border-style: none; /* Remove border when inside `a` element in IE 8/9/10 */
+}

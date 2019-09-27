@@ -1,0 +1,6 @@
+abbr[title] {
+  border-bottom: none; /* Remove the bottom border in Chrome 57- */
+  /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}

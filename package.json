@@ -14,11 +14,15 @@
     "url": "https://github.com/filipelinhares/ress/issues"
   },
   "scripts": {
-    "compile": "cssnano ress.css dist/ress.min.css",
-    "test": "stylelint ress.css"
+    "shadow": "postcss ./src/*.css -u cssnano --dir ./shadow --no-map",
+    "inputs": "postcss ./src/input/*.css -u cssnano --dir ./shadow/input --no-map",
+    "compile:shadow": "npm run shadow && npm run inputs",
+    "compile": "postcss ress.css -u cssnano ---output dist/ress.min.css --no-map",
+    "test": "stylelint ress.css ./src/"
   },
   "devDependencies": {
-    "cssnano-cli": "^1.0.5",
-    "stylelint": "^11.0.0"
+    "stylelint": "^11.0.0",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^6.1.3"
   }
 }
