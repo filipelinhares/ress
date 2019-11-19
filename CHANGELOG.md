@@ -1,3 +1,8 @@
+## [v2.0.2]
+
+### Added:
+- `color: inherit` to button like elements [#18](https://github.com/filipelinhares/ress/issues/18), thanks to [@andrewpeterprifer](https://github.com/andrewpeterprifer) :
+
 ## [v2.0.1]
 
 ### Removed:
