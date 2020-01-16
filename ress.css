@@ -129,7 +129,7 @@ input {
 
 [type="search"] {
   -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
-  outline-offset: -2px /* Correct the outline style in Safari */
+  outline-offset: -2px; /* Correct the outline style in Safari */
 }
 
 [type="search"]::-webkit-search-decoration {
