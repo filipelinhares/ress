@@ -11,7 +11,7 @@
 html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
-  word-break: break-word;
+  word-break: normal;
   -moz-tab-size: 4;
   tab-size: 4;
 }
@@ -129,7 +129,7 @@ input {
 
 [type="search"] {
   -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
-  outline-offset: -2px /* Correct the outline style in Safari */
+  outline-offset: -2px; /* Correct the outline style in Safari */
 }
 
 [type="search"]::-webkit-search-decoration {
