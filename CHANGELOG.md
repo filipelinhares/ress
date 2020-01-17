@@ -1,3 +1,9 @@
+## [v2.0.4]
+Fix deprecated version of `word-break`
+
+### Changed:
+- `word-break: break-word` to `word-break: normal` [#19](https://github.com/filipelinhares/ress/issues/19), thanks to [@matteobad](https://github.com/matteobad).
+
 ## [v2.0.2]
 
 ### Added:
