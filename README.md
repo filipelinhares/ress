@@ -2,7 +2,7 @@
 
 Modern CSS reset
 
-[![Build Status](https://travis-ci.org/filipelinhares/ress.svg?branch=master)](https://travis-ci.org/filipelinhares/ress) [![Size](https://img.shields.io/bundlephobia/min/ress?color=orange)](https://github.com/filipelinhares/ress/blob/master/dist/ress.min.css) [![npm](https://img.shields.io/npm/v/ress.svg)](http://npmjs.com/package/ress)
+[![Build Status](https://travis-ci.org/filipelinhares/ress.svg?branch=master)](https://travis-ci.org/filipelinhares/ress) [![Size](https://img.shields.io/bundlephobia/min/ress?color=orange)](https://github.com/filipelinhares/ress/blob/master/dist/ress.min.css) [![npm](https://img.shields.io/npm/v/ress.svg)](https://npmjs.com/ress)
 
 ## Installation
 ```sh
