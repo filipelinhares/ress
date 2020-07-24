@@ -1,3 +1,9 @@
+## [v3.0.0]
+
+### Removed
+Removed optionated `fill` style from `svg`.
+- `fill: currentColor` when `svg:not([fill])`
+
 ## [v2.0.4]
 Fix deprecated version of `word-break`
 

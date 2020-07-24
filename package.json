@@ -1,14 +1,14 @@
 {
   "name": "ress",
   "description": "A modern CSS reset",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "author": "Filipe Linhares",
   "bugs": {
     "url": "https://github.com/filipelinhares/ress/issues"
   },
   "devDependencies": {
     "cssnano-cli": "^1.0.5",
-    "stylelint": "^12.0.1"
+    "stylelint": "^13.6.1"
   },
   "homepage": "https://github.com/filipelinhares/ress",
   "keywords": [
