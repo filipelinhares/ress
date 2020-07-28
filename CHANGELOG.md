@@ -1,3 +1,6 @@
+## [v3.0.1]
+Change from `cssnano-cli` to `postcss-cli`.
+
 ## [v3.0.0]
 
 ### Removed
