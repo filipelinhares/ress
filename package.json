@@ -7,7 +7,8 @@
     "url": "https://github.com/filipelinhares/ress/issues"
   },
   "devDependencies": {
-    "cssnano-cli": "^1.0.5",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
     "stylelint": "^13.6.1"
   },
   "homepage": "https://github.com/filipelinhares/ress",
@@ -22,7 +23,7 @@
     "url": "https://github.com/filipelinhares/ress.git"
   },
   "scripts": {
-    "compile": "cssnano ress.css dist/ress.min.css",
+    "compile": "postcss ress.css --no-map -u cssnano -o dist/ress.min.css",
     "test": "stylelint ress.css"
   }
 }
