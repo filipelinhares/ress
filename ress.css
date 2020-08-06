@@ -205,6 +205,14 @@ textarea {
   border-style: none;
 }
 
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline-width: 0;
+}
+
 /* Style select like a standard input */
 select {
   -moz-appearance: none; /* Firefox 36+ */
