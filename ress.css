@@ -282,6 +282,6 @@ progress {
 }
 
 /* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
-[aria-disabled] {
+[aria-disabled="true"] {
   cursor: default;
 }
