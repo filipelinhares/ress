@@ -41,6 +41,7 @@ html {
 hr {
   overflow: visible; /* Show the overflow in Edge and IE */
   height: 0; /* Add the correct box sizing in Firefox */
+  color: inherit; /* Correct border color in Firefox. */
 }
 
 details,
