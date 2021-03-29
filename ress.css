@@ -109,6 +109,11 @@ sup {
   top: -0.5em;
 }
 
+table {
+  border-color: inherit; /* Correct border color in all Chrome, Edge, and Safari. */
+  text-indent: 0; /* Remove text indentation in Chrome, Edge, and Safari */
+}
+
 /* # =================================================================
    # Forms
    # ================================================================= */
