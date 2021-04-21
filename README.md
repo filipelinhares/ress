@@ -1,19 +1,23 @@
-![A brunch and the ress name](http://i.imgur.com/1sXtcsA.png)
+![A brunch and the ress name](https://i.imgur.com/NHz9ef3.png)
 
 Modern CSS reset
 
 [![Build Status](https://travis-ci.org/filipelinhares/ress.svg?branch=master)](https://travis-ci.org/filipelinhares/ress) [![Size](https://img.shields.io/bundlephobia/min/ress?color=orange)](https://github.com/filipelinhares/ress/blob/master/dist/ress.min.css) [![npm](https://img.shields.io/npm/v/ress.svg)](https://npmjs.com/ress)
 
 ## Installation
+
 ```sh
 npm install --save ress
 ```
+
 or
+
 ```sh
 bower install --save ress
 ```
 
 ## Features
+
 1. Apply `box-sizing: border-box;` in all elements.
 2. Reset `padding` and `margin` in all elements.
 3. Specify `background-repeat: no-repeat` in all elements and pseudo elements.
@@ -31,18 +35,23 @@ bower install --save ress
 15. Hide content from screens but not screenreaders.
 
 ## Crossbrowser
+
 **ress** uses [Normalize.css](https://github.com/necolas/normalize.css) under the hood with some customizations to apply a solid base to start your stylesheet.
 
 ## Browser support
+
 Inherit from [Normalize](https://github.com/necolas/normalize.css#browser-support)
 
 ## CDN
+
 [**unpkg**](https://unpkg.com)
+
 ```sh
 https://unpkg.com/ress/dist/ress.min.css
 ```
 
 [**RawGit**](https://rawgit.com)
+
 ```sh
 # Production
 https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css
@@ -52,4 +61,5 @@ https://rawgit.com/filipelinhares/ress/master/dist/ress.min.css
 ```
 
 ## License
+
 [MIT](LICENSE.md) © Filipe Linhares
