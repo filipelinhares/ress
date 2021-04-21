@@ -1,10 +1,23 @@
+## [v4.0.0]
+
+### Added:
+
+-   Reset of table element
+-   Color inherit for hr elements
+
+### Removed:
+
+-   Form elements' focus outline (#24)
+-   `cursor: default` when `aria-disabled="false"` (#26)
+-   Optional style to hide content from screens but not screenreaders. More about [here](https://webaim.org/techniques/css/invisiblecontent/)
+
 ## [v3.0.1]
 
 Change from `cssnano-cli` to `postcss-cli`.
 
 ## [v3.0.0]
 
-### Removed
+### Removed:
 
 Removed optionated `fill` style from `svg`.
 
