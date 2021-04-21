@@ -32,7 +32,6 @@ bower install --save ress
 12. Apply `tab-size: 4` in `html`.
 13. Style `select` like a standard input.
 14. Style `cursor` by aria attributes.
-15. Hide content from screens but not screenreaders.
 
 ## Crossbrowser
 
