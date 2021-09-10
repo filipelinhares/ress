@@ -49,14 +49,14 @@ Inherit from [Normalize](https://github.com/necolas/normalize.css#browser-suppor
 https://unpkg.com/ress/dist/ress.min.css
 ```
 
-[**RawGit**](https://rawgit.com)
+[**jsDevlivr**](https://www.jsdelivr.com/)
 
 ```sh
 # Production
-https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css
+https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css
 
 # Development
-https://rawgit.com/filipelinhares/ress/master/dist/ress.min.css
+https://cdn.jsdelivr.net/gh/filipelinhares/ress@latest/dist/ress.min.css
 ```
 
 ## License
