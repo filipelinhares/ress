@@ -13,7 +13,7 @@ npm install --save ress
 or
 
 ```sh
-bower install --save ress
+yarn add ress
 ```
 
 ## Features
@@ -39,7 +39,12 @@ bower install --save ress
 
 ## Browser support
 
-Inherit from [Normalize](https://github.com/necolas/normalize.css#browser-support)
+- Chrome
+- Edge
+- Firefox ESR+
+- Internet Explorer 10+
+- Opera
+- Safari 8+
 
 ## CDN
 

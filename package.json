@@ -1,7 +1,7 @@
 {
   "name": "ress",
   "description": "A modern CSS reset",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "author": "Filipe Linhares",
   "bugs": {
     "url": "https://github.com/filipelinhares/ress/issues"
