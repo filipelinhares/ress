@@ -174,7 +174,6 @@ button,
 [type='submit'],
 [role='button'] {
   cursor: pointer;
-  color: inherit;
 }
 
 /* Remove inner padding and border in Firefox 4+ */
