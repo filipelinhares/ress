@@ -127,11 +127,6 @@ input {
   border-radius: 0;
 }
 
-/* Replace pointer cursor in disabled elements */
-[disabled] {
-  cursor: default;
-}
-
 [type='number']::-webkit-inner-spin-button,
 [type='number']::-webkit-outer-spin-button {
   height: auto; /* Correct the cursor style of increment and decrement buttons in Chrome */
@@ -251,6 +246,11 @@ legend {
   -webkit-appearance: button;
   color: inherit;
   font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
+}
+
+/* Replace pointer cursor in disabled elements */
+[disabled] {
+  cursor: default;
 }
 
 /* # =================================================================
