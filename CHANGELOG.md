@@ -1,3 +1,16 @@
+## [v5.0.0]
+
+### Added:
+- `border-style` to `iframe` element
+
+### Changed:
+
+- Move `[disabled]` selector down in the cascade.
+
+### Removed:
+
+- `color: inherit` from `button`
+
 ## [v4.0.0]
 
 ### Added:
