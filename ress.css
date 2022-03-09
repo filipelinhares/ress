@@ -115,6 +115,10 @@ table {
   text-indent: 0; /* Remove text indentation in Chrome, Edge, and Safari */
 }
 
+iframe {
+  border-style: none;
+}
+
 /* # =================================================================
    # Forms
    # ================================================================= */
