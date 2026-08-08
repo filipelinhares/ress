@@ -116,6 +116,25 @@ iframe {
 }
 
 /* # =================================================================
+   # Accessibility
+   # ================================================================= */
+
+/* Specify the progress cursor of updating elements */
+[aria-busy='true'] {
+  cursor: progress;
+}
+
+/* Specify the pointer cursor of trigger elements */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+[aria-disabled='true'] {
+  cursor: default;
+}
+
+/* # =================================================================
    # Forms
    # ================================================================= */
 
@@ -259,23 +278,4 @@ img {
 /* Add the correct vertical alignment in Chrome, Firefox, and Opera */
 progress {
   vertical-align: baseline;
-}
-
-/* # =================================================================
-   # Accessibility
-   # ================================================================= */
-
-/* Specify the progress cursor of updating elements */
-[aria-busy='true'] {
-  cursor: progress;
-}
-
-/* Specify the pointer cursor of trigger elements */
-[aria-controls] {
-  cursor: pointer;
-}
-
-/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
-[aria-disabled='true'] {
-  cursor: default;
 }
