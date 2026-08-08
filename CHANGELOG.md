@@ -1,3 +1,10 @@
+## [v6.0.0]
+
+### Changed:
+
+- Move `[aria-busy]` and `[aria-controls]` above the forms rules ([#32](https://github.com/filipelinhares/ress/issues/32)), thanks to [@Quentin-Guillemin](https://github.com/Quentin-Guillemin).
+- Merge `[aria-disabled='true']` into the `[disabled]` rule so disabled elements keep `cursor: default` over `[role='button']` and `[type='button']`.
+
 ## [v5.0.0]
 
 ### Added:
