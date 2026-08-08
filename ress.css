@@ -129,11 +129,6 @@ iframe {
   cursor: pointer;
 }
 
-/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
-[aria-disabled='true'] {
-  cursor: default;
-}
-
 /* # =================================================================
    # Forms
    # ================================================================= */
@@ -262,8 +257,9 @@ legend {
   font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
 }
 
-/* Replace pointer cursor in disabled elements */
-[disabled] {
+/* Replace pointer cursor in disabled, not-editable, or otherwise inoperable elements */
+[disabled],
+[aria-disabled='true'] {
   cursor: default;
 }
 
