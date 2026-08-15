@@ -34,6 +34,10 @@ html {
    # General elements
    # ================================================================= */
 
+h1 {
+   font-size: 2em; /* Consistent style for h1 in article, aside, nav, section */
+}
+
 hr {
   overflow: visible; /* Show the overflow in Edge and IE */
   height: 0; /* Add the correct box sizing in Firefox */
